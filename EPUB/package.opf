@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="epub-id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="epub-id">http://lccn.loc.gov/16014724</dc:identifier>
+        <meta refines="#epub-id" property="identifier-type" scheme="onix:codelist5">13</meta>
+
+        <dc:title>Alice's Adventures in Wonderland</dc:title>
+
+        <dc:description>A girl named Alice falls into a rabbit hole, where she encounters a world of strange creatures.</dc:description>
+
+        <dc:creator id="creator1">Lewis Carroll</dc:creator>
+        <meta refines="#creator1" property="file-as">Carroll, Lewis</meta>
+        <meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
+        <meta refines="#creator1" property="display-seq">1</meta>
+
+        <dc:creator id="creator2">John Tenniel</dc:creator>
+        <meta refines="#creator2" property="file-as">Tenniel, John</meta>
+        <meta refines="#creator2" property="role" scheme="marc:relators">ill</meta>
+        <meta refines="#creator2" property="display-seq">2</meta>
+
+        <dc:contributor id="contributor1">Matija Osrečki</dc:contributor>
+        <meta refines="#contributor1" property="file-as">Osrečki, Matija</meta>
+        <meta refines="#contributor1" property="role" scheme="marc:relators">mrk</meta>
+
+        <meta property="dcterms:modified">2021-03-29T14:30:00Z</meta>
+
+        <dc:publisher>London: Macmillan</dc:publisher>
+
+        <dc:language>en</dc:language>
+
+        <dc:date>1928</dc:date>
+
+        <dc:subject id="subject1">FICTION / Fantasy / Action &amp; Adventure</dc:subject>
+        <meta refines="#subject1" property="authority">BISAC</meta>
+        <meta refines="#subject1" property="term">FIC009100</meta>
+
+        <meta property="media:duration" refines="#smil_01">0:01:30.296</meta>
+        <meta property="media:duration">0:13:16</meta>
+  
+        <meta property="media:narrator">Kara Shallenberg</meta>
+        
+        <meta property="media:active-class">-epub-media-overlay-active</meta>
+        <meta property="media:playback-active-class">-epub-media-overlay-playing</meta>
+
+        <dc:source>https://www.gutenberg.org/files/11/11-h/11-h.htm</dc:source>
+    </metadata>
+    
+    <manifest>
+        <!-- Fonts -->
+        <item media-type="font/woff2" id="font.Merriweather.regular" href="fonts/Merriweather-Regular.woff2" />
+        <item media-type="font/woff2" id="font.Merriweather.italic" href="fonts/Merriweather-Italic.woff2" />
+        <item media-type="font/woff2" id="font.Merriweather.bold" href="fonts/Merriweather-Bold.woff2" />
+        <item media-type="font/woff2" id="font.Merriweather.bold.italic" href="fonts/Merriweather-BoldItalic.woff2" />
+        <item media-type="font/woff2" id="font.Merriweather.light" href="fonts/Merriweather-Light.woff2" />
+        <item media-type="font/woff2" id="font.Merriweather.light.italic" href="fonts/Merriweather-LightItalic.woff2" />
+        
+        <!-- SVG's & Images -->
+        <item id="signature" href="images/signature.svg" media-type="image/svg+xml" />
+        <item id="logo" href="images/logo.svg" media-type="image/svg+xml" />    
+        <item id="king-image" href="images/img_01.jpg" media-type="image/jpeg" fallback="king-image-fallback"/>
+        <item id="king-image-fallback" href="images/king.svg" media-type="image/svg+xml" />
+        <item id="img_02" href="images/img_02.jpg" media-type="image/jpeg" />
+        <item id="img_03" href="images/img_03.jpg" media-type="image/jpeg" />
+        <item id="img_04" href="images/img_04.jpg" media-type="image/jpeg" />
+        <item id="img_05" href="images/img_05.jpg" media-type="image/jpeg" />
+        <item id="img_06" href="images/img_06.jpg" media-type="image/jpeg" />
+        <item id="img_07" href="images/img_07.jpg" media-type="image/jpeg" />
+        <item id="cover-img" href="images/img_08.jpg" media-type="image/jpeg" properties="cover-image" />  
+
+        <!-- Videos -->
+        <!-- <item id="movie" href="videos/movie.mp4" media-type="video/mp4" fallback="movie-fallback"/> -->
+        <!-- <item id="movie-fallback" href="https://vimeo.com/554221299" media-type="video/webm" /> -->
+        <item id="movie" href="https://vimeo.com/554221299" media-type="video/webm" />
+        <item id="movie-poster" href="images/poster.jpg" media-type="image/jpeg" />
+
+        <!-- Media Overlays -->
+        <item id="smil_01" href="text/ch_01.xhtml.smil" media-type="application/smil+xml"/>
+        <item id="audio_01" href="audio/chapter_01.mp3" media-type="audio/mpeg"/>
+        
+        <!-- CSS -->
+        <item id="style-css" href="css/style.css" media-type="text/css" />
+
+        <!-- Scripts -->
+        <item id="js1" href="script/preface.js" media-type="text/javascript"/> 
+        <item id="js2" href="script/greeting.js" media-type="text/javascript"/>
+
+        <!-- XHTML -->
+        <item id="cover-title" href="covertitle.xhtml" media-type="application/xhtml+xml" properties="svg" />
+        <item id="publisher" href="publisher.xhtml" media-type="application/xhtml+xml" properties="svg" />
+        <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml" />
+        <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml" />
+        <item id="preface" href="preface.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+        <item id="navigation" href="navigation.xhtml" media-type="application/xhtml+xml" properties="nav" />
+        <item id="chapter_01" href="chapter_01.xhtml" media-type="application/xhtml+xml" media-overlay="smil_01"/>
+        <item id="chapter_12" href="chapter_12.xhtml" media-type="application/xhtml+xml" />
+        <item id="chapter-movie" href="movie.xhtml" media-type="application/xhtml+xml" properties="remote-resources"/>
+        <item id="greeting_01" href="greeting_01.xhtml" media-type="application/xhtml+xml" />
+        <item id="greeting_02" href="greeting_02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+        <item id="works" href="works.xhtml" media-type="application/xhtml+xml" />
+    </manifest>
+
+    <spine>
+        <!-- Cover & frontmatter -->
+        <itemref idref="cover-title" linear="yes" />
+        <itemref idref="publisher" />
+        <itemref idref="king-image" />
+        <itemref idref="titlepage" />
+        <itemref idref="copyright" />
+        <itemref idref="preface" />
+
+        <!-- Navigation -->
+        <itemref idref="navigation" linear="yes" />
+
+        <!-- Bodymatter -->
+        <itemref idref="chapter_01" />
+        <itemref idref="chapter_12" />
+        <itemref idref="chapter-movie" />
+
+        <!-- Backmatter -->
+        <itemref idref="greeting_01" />
+        <itemref idref="greeting_02" />
+        <itemref idref="works" />
+    </spine>
+</package>
